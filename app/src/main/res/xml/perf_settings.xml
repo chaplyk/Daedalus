@@ -14,7 +14,7 @@
         <ListPreference
                 android:key="secondary_server"
                 android:title="@string/secondary_server"
-                android:defaultValue="1">
+                android:defaultValue="0">
         </ListPreference>
         <EditTextPreference
                 android:key="dns_test_servers"
@@ -50,7 +50,7 @@
                 android:selectAllOnFocus="false"
                 android:singleLine="true"
                 android:numeric="integer"
-                android:defaultValue="10000"
+                android:defaultValue="0"
                 android:title="@string/settings_log_size"/>
     </PreferenceCategory>
 
@@ -111,24 +111,4 @@
                 android:enabled="false"/>
     </PreferenceCategory>
 
-    <PreferenceCategory
-            app:iconSpaceReserved="false"
-            android:key="settings_help"
-            android:title="@string/settings_help_and_support">
-        <org.itxtech.daedalus.widget.ClickPreference
-                android:key="settings_privacy_policy"
-                android:title="@string/settings_privacy_policy"/>
-        <org.itxtech.daedalus.widget.ClickPreference
-                android:key="settings_check_update"
-                android:title="@string/settings_check_update"
-                android:summary="@string/settings_update_summary"/>
-        <org.itxtech.daedalus.widget.ClickPreference
-                android:key="settings_issue_tracker"
-                android:title="@string/settings_bug_report"
-                android:summary="@string/settings_issue_summary"/>
-        <org.itxtech.daedalus.widget.ClickPreference
-                android:key="settings_manual"
-                android:title="@string/settings_manual"
-                android:summary="@string/settings_manual_summary"/>
-    </PreferenceCategory>
 </androidx.preference.PreferenceScreen>

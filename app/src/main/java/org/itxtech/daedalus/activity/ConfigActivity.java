@@ -13,7 +13,6 @@ import org.itxtech.daedalus.Daedalus;
 import org.itxtech.daedalus.R;
 import org.itxtech.daedalus.fragment.ConfigFragment;
 import org.itxtech.daedalus.fragment.DnsServerConfigFragment;
-import org.itxtech.daedalus.fragment.RuleConfigFragment;
 
 /**
  * Daedalus Project
@@ -42,31 +41,6 @@ public class ConfigActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
 
-        ConfigFragment fragment;
-        switch (getIntent().getIntExtra(LAUNCH_ACTION_FRAGMENT, LAUNCH_FRAGMENT_DNS_SERVER)) {
-            case LAUNCH_FRAGMENT_RULE:
-                fragment = new RuleConfigFragment();
-                break;
-            case LAUNCH_FRAGMENT_DNS_SERVER:
-            default://should never reach this
-                fragment = new DnsServerConfigFragment();
-                break;
-        }
-
-        Toolbar toolbar = findViewById(R.id.toolbar_config);
-        Drawable drawable = ContextCompat.getDrawable(this, R.drawable.ic_clear);
-        Drawable wrappedDrawable = DrawableCompat.wrap(drawable);
-        DrawableCompat.setTint(wrappedDrawable, Color.WHITE);
-        toolbar.setNavigationIcon(drawable);
-        toolbar.setNavigationOnClickListener(v -> onBackPressed());
-        toolbar.setOnMenuItemClickListener(fragment);
-        toolbar.inflateMenu(R.menu.custom_config);
-
-        FragmentManager manager = getSupportFragmentManager();
-        fragment.setIntent(getIntent());
-        FragmentTransaction fragmentTransaction = manager.beginTransaction();
-        fragmentTransaction.replace(R.id.id_config, fragment);
-        fragmentTransaction.commit();
     }
 
     @Override

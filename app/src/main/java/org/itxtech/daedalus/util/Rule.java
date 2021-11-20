@@ -121,24 +121,6 @@ public class Rule {
         Logger.info("Delete rule " + getName() + " result: " + file.delete());
     }
 
-    public static String[] getBuildInRuleNames() {
-        ArrayList<String> names = new ArrayList<>(Daedalus.RULES.size());
-        for (Rule rule : Daedalus.RULES) {
-            names.add(rule.getName() + " - " + getTypeById(rule.getType()));
-        }
-        String[] strings = new String[names.size()];
-        return names.toArray(strings);
-    }
-
-    public static String[] getBuildInRuleEntries() {
-        ArrayList<String> entries = new ArrayList<>(Daedalus.RULES.size());
-        for (int i = 0; i < Daedalus.RULES.size(); i++) {
-            entries.add(String.valueOf(i));
-        }
-        String[] strings = new String[entries.size()];
-        return entries.toArray(strings);
-    }
-
     public static Rule getRuleById(String id) {
         for (Rule rule : Daedalus.configurations.getHostsRules()) {
             if (rule.getId().equals(id)) {

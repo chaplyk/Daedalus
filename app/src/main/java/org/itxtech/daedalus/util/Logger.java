@@ -66,7 +66,7 @@ public class Logger {
     }
 
     private static int getLogSizeLimit() {
-        return Integer.parseInt(Daedalus.getPrefs().getString("settings_log_size", "10000"));
+        return Integer.parseInt(Daedalus.getPrefs().getString("settings_log_size", "0"));
     }
 
     private static boolean checkBufferSize() {

@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static final int FRAGMENT_DNS_TEST = 1;
     public static final int FRAGMENT_SETTINGS = 2;
     public static final int FRAGMENT_ABOUT = 3;
-    public static final int FRAGMENT_RULES = 4;
-    public static final int FRAGMENT_DNS_SERVERS = 5;
     public static final int FRAGMENT_LOG = 6;
 
     public static final String LAUNCH_NEED_RECREATE = "org.itxtech.daedalus.activity.MainActivity.LAUNCH_NEED_RECREATE";
@@ -86,9 +84,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        ((TextView) navigationView.getHeaderView(0).findViewById(R.id.textView_nav_version)).setText(getString(R.string.nav_version) + " " + BuildConfig.VERSION_NAME);
-        ((TextView) navigationView.getHeaderView(0).findViewById(R.id.textView_nav_git_commit)).setText(getString(R.string.nav_git_commit) + " " + BuildConfig.GIT_COMMIT);
 
         updateUserInterface(getIntent());
     }
@@ -212,17 +207,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case FRAGMENT_ABOUT:
                 switchFragment(AboutFragment.class);
                 break;
-            case FRAGMENT_DNS_SERVERS:
-                switchFragment(DnsServersFragment.class);
-                break;
             case FRAGMENT_DNS_TEST:
                 switchFragment(DnsTestFragment.class);
                 break;
             case FRAGMENT_HOME:
                 switchFragment(HomeFragment.class);
-                break;
-            case FRAGMENT_RULES:
-                switchFragment(RulesFragment.class);
                 break;
             case FRAGMENT_SETTINGS:
                 switchFragment(SettingsFragment.class);
@@ -244,20 +233,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_about:
                 switchFragment(AboutFragment.class);
                 break;
-            case R.id.nav_dns_server:
-                switchFragment(DnsServersFragment.class);
-                break;
             case R.id.nav_dns_test:
                 switchFragment(DnsTestFragment.class);
                 break;
-            case R.id.nav_github:
-                Daedalus.openUri("https://github.com/iTXTech/Daedalus");
-                break;
             case R.id.nav_home:
                 switchFragment(HomeFragment.class);
-                break;
-            case R.id.nav_rules:
-                switchFragment(RulesFragment.class);
                 break;
             case R.id.nav_settings:
                 switchFragment(SettingsFragment.class);

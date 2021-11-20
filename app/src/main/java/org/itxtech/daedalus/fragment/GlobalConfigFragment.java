@@ -87,26 +87,6 @@ public class GlobalConfigFragment extends PreferenceFragmentCompat {
             return false;
         });
 
-        findPreference("settings_check_update").setOnPreferenceClickListener(preference -> {
-            Daedalus.openUri("https://github.com/iTXTech/Daedalus/releases");
-            return false;
-        });
-
-        findPreference("settings_issue_tracker").setOnPreferenceClickListener(preference -> {
-            Daedalus.openUri("https://github.com/iTXTech/Daedalus/issues");
-            return false;
-        });
-
-        findPreference("settings_manual").setOnPreferenceClickListener(preference -> {
-            Daedalus.openUri("https://github.com/iTXTech/Daedalus/wiki");
-            return false;
-        });
-
-        findPreference("settings_privacy_policy").setOnPreferenceClickListener(preference -> {
-            Daedalus.openUri("https://github.com/iTXTech/Daedalus/wiki/Privacy-Policy");
-            return false;
-        });
-
         updateOptions(advanced.isChecked(), "settings_advanced");
         updateOptions(appFilter.isChecked(), "settings_app_filter");
     }

@@ -46,24 +46,9 @@ public class Daedalus extends Application {
     private static final String SHORTCUT_ID_ACTIVATE = "shortcut_activate";
 
     public static final List<DnsServer> DNS_SERVERS = new ArrayList<DnsServer>() {{
-        add(new DnsServer("101.101.101.101", R.string.server_twnic_primary));
-        add(new DnsServer("101.102.103.104", R.string.server_twnic_secondary));
-        add(new DnsServer("rubyfish.cn/dns-query", R.string.server_rubyfish));
-        add(new DnsServer("cloudflare-dns.com/dns-query", R.string.server_cloudflare));
-        add(new DnsServer("dns.google/dns-query", R.string.server_google_ietf));
-        add(new DnsServer("dns.google/resolve", R.string.server_google_json));
-    }};
-
-    public static final ArrayList<Rule> RULES = new ArrayList<Rule>() {{
-        add(new Rule("googlehosts/hosts", "googlehosts.hosts", Rule.TYPE_HOSTS,
-                "https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts", false));
-        add(new Rule("vokins/yhosts", "vokins.hosts", Rule.TYPE_HOSTS,
-                "https://raw.githubusercontent.com/vokins/yhosts/master/hosts", false));
-        add(new Rule("adaway", "adaway.hosts", Rule.TYPE_HOSTS,
-                "https://adaway.org/hosts.txt", false));
-        //Build-in DNSMasq rule providers
-        add(new Rule("vokins/yhosts/union", "union.dnsmasq", Rule.TYPE_DNAMASQ,
-                "https://raw.githubusercontent.com/vokins/yhosts/master/dnsmasq/union.conf", false));
+        add(new DnsServer("158.101.118.131", R.string.server_carrot_iad));
+        add(new DnsServer("152.70.177.207", R.string.server_carrot_fra));
+        add(new DnsServer("37.233.103.45", R.string.server_carrot_waw));
     }};
 
     public static final String[] DEFAULT_TEST_DOMAINS = {
