@@ -67,7 +67,7 @@
                 android:title="@string/settings_app_filter_mode"
                 android:defaultValue="false"
                 android:enabled="false"/>
-        <com.carrotproxy.daedalus.widget.ClickPreference
+        <com.carrotproxy.dns.widget.ClickPreference
                 android:key="settings_app_filter_list"
                 android:title="@string/settings_app_filter_list"
                 android:summary="@string/settings_app_filter_list_summary"

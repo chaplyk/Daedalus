@@ -9,10 +9,10 @@
             android:shortcutShortLabel="@string/action_settings">
         <intent
                 android:action="android.intent.action.VIEW"
-                android:targetClass="com.carrotproxy.daedalus.activity.MainActivity"
-                android:targetPackage="com.carrotproxy.daedalus">
+                android:targetClass="com.carrotproxy.dns.activity.MainActivity"
+                android:targetPackage="com.carrotproxy.dns">
             <extra
-                    android:name="com.carrotproxy.daedalus.activity.MainActivity.LAUNCH_FRAGMENT"
+                    android:name="com.carrotproxy.dns.activity.MainActivity.LAUNCH_FRAGMENT"
                     android:value="2"/>
         </intent>
     </shortcut>
