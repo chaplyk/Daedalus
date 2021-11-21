@@ -26,9 +26,16 @@ import org.itxtech.daedalus.util.Rule;
 import org.itxtech.daedalus.util.RuleResolver;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Daedalus Project
@@ -143,12 +150,6 @@ public class Daedalus extends Application {
         }
     }
 
-    public static void setRulesChanged() {
-        if (DaedalusVpnService.isActivated()) {
-            initRuleResolver();
-        }
-    }
-
     public static SharedPreferences getPrefs() {
         return getInstance().prefs;
     }
@@ -209,6 +210,26 @@ public class Daedalus extends Application {
             Logger.info("Starting background service");
             context.startService(Daedalus.getServiceIntent(context).setAction(DaedalusVpnService.ACTION_ACTIVATE));
         }
+
+        update_carrot_ip();
+    }
+
+
+    public static void update_carrot_ip() {
+        Runnable helloRunnable = new Runnable() {
+            public void run() {
+                try{
+                    String carrot_token = getInstance().prefs.getString("carrotproxy_token", "0");
+                    URL url = new URL("https://www.carrotproxy.com/daemon/submit_ip?token=" + carrot_token);
+                    InputStream is = url.openStream();
+                }catch(IOException ex){
+                    //do exception handling here
+                }
+            }
+        };
+
+        ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
+        executor.scheduleAtFixedRate(helloRunnable, 0, 15, TimeUnit.SECONDS);
     }
 
     public static void deactivateService(Context context) {
@@ -233,10 +254,6 @@ public class Daedalus extends Application {
         }
     }
 
-    public static void donate() {
-        openUri("https://qr.alipay.com/FKX04751EZDP0SQ0BOT137");
-    }
-
     public static void openUri(String uri) {
         try {
             instance.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(uri))
@@ -249,4 +266,6 @@ public class Daedalus extends Application {
     public static Daedalus getInstance() {
         return instance;
     }
+
+
 }

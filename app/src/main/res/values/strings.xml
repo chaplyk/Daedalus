@@ -98,4 +98,6 @@
     <string name="server_carrot_iad">Ashburn, USA</string>
     <string name="server_carrot_fra">Frankfurt, Germany</string>
     <string name="server_carrot_waw">Warsaw, Poland</string>
+
+    <string name="carrot_token">CarrotProxy Token</string>
 </resources>

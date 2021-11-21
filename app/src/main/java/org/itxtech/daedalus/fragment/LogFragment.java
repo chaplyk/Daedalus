@@ -42,19 +42,6 @@ public class LogFragment extends ToolbarFragment implements Toolbar.OnMenuItemCl
         ((TextView) getView().findViewById(R.id.textView_log)).setText(Logger.getLog());
     }
 
-    private void export() {
-        try {
-            String file = Daedalus.logPath + System.currentTimeMillis() + ".log";
-            FileWriter fileWriter = new FileWriter(file);
-            fileWriter.write(Logger.getLog());
-            fileWriter.close();
-            Snackbar.make(getView(), getString(R.string.notice_export_complete) + file, Snackbar.LENGTH_SHORT)
-                    .setAction("Action", null).show();
-        } catch (Exception e) {
-            Logger.logException(e);
-        }
-    }
-
     @Override
     public void checkStatus() {
         menu.findItem(R.id.nav_log).setChecked(true);
@@ -76,7 +63,6 @@ public class LogFragment extends ToolbarFragment implements Toolbar.OnMenuItemCl
                 refresh();
                 break;
             case R.id.action_export:
-                export();
                 break;
         }
 

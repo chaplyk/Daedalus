@@ -99,24 +99,7 @@ public class DnsServerConfigFragment extends ConfigFragment {
                     server.setAddress(serverAddress);
                     server.setPort(Integer.parseInt(serverPort));
                 }
-                Daedalus.setRulesChanged();
                 getActivity().finish();
-                break;
-            case R.id.action_delete:
-                if (index != ConfigActivity.ID_NONE) {
-                    new AlertDialog.Builder(getActivity())
-                            .setTitle(R.string.notice_delete_confirm_prompt)
-                            .setPositiveButton(android.R.string.yes, (dialog, which) -> {
-                                Daedalus.configurations.getCustomDNSServers().remove(index);
-                                getActivity().finish();
-                            })
-                            .setNegativeButton(android.R.string.no, null)
-                            .create()
-                            .show();
-                } else {
-                    Daedalus.setRulesChanged();
-                    getActivity().finish();
-                }
                 break;
         }
 
