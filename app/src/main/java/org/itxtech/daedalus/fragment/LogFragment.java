@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.snackbar.Snackbar;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.util.Logger;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.util.Logger;
 
 import java.io.FileWriter;
 

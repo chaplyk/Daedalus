@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -8,11 +8,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.material.snackbar.Snackbar;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.activity.ConfigActivity;
-import org.itxtech.daedalus.server.CustomDnsServer;
-import org.itxtech.daedalus.server.DnsServer;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.activity.ConfigActivity;
+import com.carrotproxy.daedalus.server.CustomDnsServer;
+import com.carrotproxy.daedalus.server.DnsServer;
 
 /**
  * Daedalus Project

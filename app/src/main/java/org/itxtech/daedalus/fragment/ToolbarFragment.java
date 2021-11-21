@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -6,7 +6,7 @@ import android.view.View;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import com.google.android.material.navigation.NavigationView;
-import org.itxtech.daedalus.R;
+import com.carrotproxy.daedalus.R;
 
 /**
  * Daedalus Project

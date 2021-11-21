@@ -1,4 +1,4 @@
-package org.itxtech.daedalus;
+package com.carrotproxy.daedalus;
 
 import android.app.Application;
 import android.content.Context;
@@ -15,15 +15,15 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParseException;
 import com.google.gson.stream.JsonReader;
-import org.itxtech.daedalus.activity.MainActivity;
-import org.itxtech.daedalus.server.AbstractDnsServer;
-import org.itxtech.daedalus.server.DnsServer;
-import org.itxtech.daedalus.server.DnsServerHelper;
-import org.itxtech.daedalus.service.DaedalusVpnService;
-import org.itxtech.daedalus.util.Configurations;
-import org.itxtech.daedalus.util.Logger;
-import org.itxtech.daedalus.util.Rule;
-import org.itxtech.daedalus.util.RuleResolver;
+import com.carrotproxy.daedalus.activity.MainActivity;
+import com.carrotproxy.daedalus.server.AbstractDnsServer;
+import com.carrotproxy.daedalus.server.DnsServer;
+import com.carrotproxy.daedalus.server.DnsServerHelper;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.util.Configurations;
+import com.carrotproxy.daedalus.util.Logger;
+import com.carrotproxy.daedalus.util.Rule;
+import com.carrotproxy.daedalus.util.RuleResolver;
 
 import java.io.File;
 import java.io.IOException;

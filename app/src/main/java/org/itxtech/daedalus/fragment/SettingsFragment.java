@@ -1,10 +1,10 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import org.itxtech.daedalus.R;
+import com.carrotproxy.daedalus.R;
 
 /**
  * Daedalus Project

@@ -1,13 +1,13 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.preference.*;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.activity.AppFilterActivity;
-import org.itxtech.daedalus.activity.MainActivity;
-import org.itxtech.daedalus.server.DnsServerHelper;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.activity.AppFilterActivity;
+import com.carrotproxy.daedalus.activity.MainActivity;
+import com.carrotproxy.daedalus.server.DnsServerHelper;
 
 import java.util.ArrayList;
 

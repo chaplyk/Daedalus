@@ -1,9 +1,9 @@
-package org.itxtech.daedalus.provider;
+package com.carrotproxy.daedalus.provider;
 
 import android.os.ParcelFileDescriptor;
-import org.itxtech.daedalus.service.DaedalusVpnService;
-import org.itxtech.daedalus.util.Logger;
-import org.itxtech.daedalus.server.AbstractDnsServer;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.util.Logger;
+import com.carrotproxy.daedalus.server.AbstractDnsServer;
 import org.pcap4j.packet.IpPacket;
 
 import javax.net.ssl.SSLContext;

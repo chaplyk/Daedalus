@@ -1,8 +1,8 @@
-package org.itxtech.daedalus.provider;
+package com.carrotproxy.daedalus.provider;
 
 import android.os.ParcelFileDescriptor;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
 
 /**
  * Daedalus Project

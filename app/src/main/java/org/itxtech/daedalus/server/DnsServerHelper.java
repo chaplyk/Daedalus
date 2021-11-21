@@ -1,12 +1,12 @@
-package org.itxtech.daedalus.server;
+package com.carrotproxy.daedalus.server;
 
 import android.content.Context;
 import android.net.Uri;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.provider.HttpsProvider;
-import org.itxtech.daedalus.provider.ProviderPicker;
-import org.itxtech.daedalus.service.DaedalusVpnService;
-import org.itxtech.daedalus.util.Logger;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.provider.HttpsProvider;
+import com.carrotproxy.daedalus.provider.ProviderPicker;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.util.Logger;
 
 import java.net.InetAddress;
 import java.util.ArrayList;

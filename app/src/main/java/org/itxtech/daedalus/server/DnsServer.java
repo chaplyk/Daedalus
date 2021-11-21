@@ -1,7 +1,7 @@
-package org.itxtech.daedalus.server;
+package com.carrotproxy.daedalus.server;
 
 import android.content.Context;
-import org.itxtech.daedalus.Daedalus;
+import com.carrotproxy.daedalus.Daedalus;
 
 /**
  * Daedalus Project

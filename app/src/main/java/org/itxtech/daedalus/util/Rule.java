@@ -1,6 +1,6 @@
-package org.itxtech.daedalus.util;
+package com.carrotproxy.daedalus.util;
 
-import org.itxtech.daedalus.Daedalus;
+import com.carrotproxy.daedalus.Daedalus;
 
 import java.io.File;
 import java.util.ArrayList;

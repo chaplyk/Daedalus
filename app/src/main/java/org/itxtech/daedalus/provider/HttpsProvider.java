@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.provider;
+package com.carrotproxy.daedalus.provider;
 
 import android.os.ParcelFileDescriptor;
 import android.system.Os;
@@ -7,10 +7,10 @@ import android.system.StructPollfd;
 import android.util.Log;
 import androidx.annotation.NonNull;
 import okhttp3.OkHttpClient;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.service.DaedalusVpnService;
-import org.itxtech.daedalus.util.Logger;
-import org.itxtech.daedalus.server.DnsServerHelper;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.util.Logger;
+import com.carrotproxy.daedalus.server.DnsServerHelper;
 import org.minidns.dnsmessage.DnsMessage;
 import org.pcap4j.packet.IpPacket;
 import org.pcap4j.packet.IpSelector;

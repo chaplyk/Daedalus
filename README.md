@@ -9,11 +9,11 @@ __No root required Android DNS modifier and Hosts/DNSMasq resolver.__
 ## Installation
 * __[Jenkins](http://dev.itxtech.org:10298/job/Daedalus/)__ - Debug signature
 * __[Releases](https://github.com/iTXTech/Daedalus/releases)__ - Release signature
-* __[Play Test](https://play.google.com/apps/testing/org.itxtech.daedalus)__ - Release signature
+* __[Play Test](https://play.google.com/apps/testing/com.carrotproxy.daedalus)__ - Release signature
 
 [<img alt='Get it on Google Play'
       src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
-      height="80">](https://play.google.com/store/apps/details?id=org.itxtech.daedalus)
+      height="80">](https://play.google.com/store/apps/details?id=com.carrotproxy.daedalus)
 
 ## Useful links
 * __[Telegram](https://t.me/iTXTechDaedalus)__ - Join chat

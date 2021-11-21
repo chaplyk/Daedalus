@@ -1,6 +1,6 @@
-package org.itxtech.daedalus.server;
+package com.carrotproxy.daedalus.server;
 
-import org.itxtech.daedalus.Daedalus;
+import com.carrotproxy.daedalus.Daedalus;
 
 /**
  * Daedalus Project

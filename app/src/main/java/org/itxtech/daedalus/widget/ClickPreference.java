@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.widget;
+package com.carrotproxy.daedalus.widget;
 
 import android.content.Context;
 import androidx.preference.ListPreference;

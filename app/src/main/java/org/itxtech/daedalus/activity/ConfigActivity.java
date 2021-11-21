@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.activity;
+package com.carrotproxy.daedalus.activity;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -9,10 +9,10 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.fragment.ConfigFragment;
-import org.itxtech.daedalus.fragment.DnsServerConfigFragment;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.fragment.ConfigFragment;
+import com.carrotproxy.daedalus.fragment.DnsServerConfigFragment;
 
 /**
  * Daedalus Project
@@ -26,11 +26,11 @@ import org.itxtech.daedalus.fragment.DnsServerConfigFragment;
  * (at your option) any later version.
  */
 public class ConfigActivity extends AppCompatActivity {
-    public static final String LAUNCH_ACTION_FRAGMENT = "org.itxtech.daedalus.activity.ConfigActivity.LAUNCH_ACTION_FRAGMENT";
+    public static final String LAUNCH_ACTION_FRAGMENT = "com.carrotproxy.daedalus.activity.ConfigActivity.LAUNCH_ACTION_FRAGMENT";
     public static final int LAUNCH_FRAGMENT_DNS_SERVER = 0;
     public static final int LAUNCH_FRAGMENT_RULE = 1;
 
-    public static final String LAUNCH_ACTION_ID = "org.itxtech.daedalus.activity.ConfigActivity.LAUNCH_ACTION_ID";
+    public static final String LAUNCH_ACTION_ID = "com.carrotproxy.daedalus.activity.ConfigActivity.LAUNCH_ACTION_ID";
     public static final int ID_NONE = -1;
 
     @Override

@@ -1,9 +1,9 @@
-package org.itxtech.daedalus.provider;
+package com.carrotproxy.daedalus.provider;
 
 import android.os.ParcelFileDescriptor;
 import android.util.Base64;
 import okhttp3.*;
-import org.itxtech.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
 import org.minidns.dnsmessage.DnsMessage;
 import org.pcap4j.packet.IpPacket;
 

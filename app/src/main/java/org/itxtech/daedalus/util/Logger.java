@@ -1,7 +1,7 @@
-package org.itxtech.daedalus.util;
+package com.carrotproxy.daedalus.util;
 
 import android.util.Log;
-import org.itxtech.daedalus.Daedalus;
+import com.carrotproxy.daedalus.Daedalus;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.provider;
+package com.carrotproxy.daedalus.provider;
 
 import android.os.ParcelFileDescriptor;
 import com.google.gson.JsonArray;
@@ -6,7 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import okhttp3.*;
-import org.itxtech.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
 import org.minidns.dnsmessage.DnsMessage;
 import org.minidns.dnsname.DnsName;
 import org.minidns.record.*;

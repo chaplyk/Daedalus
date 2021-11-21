@@ -1,11 +1,11 @@
-package org.itxtech.daedalus.provider;
+package com.carrotproxy.daedalus.provider;
 
 import android.os.ParcelFileDescriptor;
 import android.system.Os;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.service.DaedalusVpnService;
-import org.itxtech.daedalus.util.Logger;
-import org.itxtech.daedalus.util.RuleResolver;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.util.Logger;
+import com.carrotproxy.daedalus.util.RuleResolver;
 import org.minidns.dnsmessage.DnsMessage;
 import org.minidns.record.A;
 import org.minidns.record.AAAA;

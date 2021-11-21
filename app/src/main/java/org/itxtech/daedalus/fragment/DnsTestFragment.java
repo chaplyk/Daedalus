@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,11 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.util.Logger;
-import org.itxtech.daedalus.server.AbstractDnsServer;
-import org.itxtech.daedalus.server.DnsServerHelper;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.util.Logger;
+import com.carrotproxy.daedalus.server.AbstractDnsServer;
+import com.carrotproxy.daedalus.server.DnsServerHelper;
 import org.minidns.dnsmessage.DnsMessage;
 import org.minidns.dnsmessage.Question;
 import org.minidns.record.Record;

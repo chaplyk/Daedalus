@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.activity;
+package com.carrotproxy.daedalus.activity;
 
 import android.annotation.SuppressLint;
 import android.content.pm.PackageInfo;
@@ -20,8 +20,8 @@ import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

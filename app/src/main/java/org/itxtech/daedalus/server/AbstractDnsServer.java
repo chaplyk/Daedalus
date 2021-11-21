@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.server;
+package com.carrotproxy.daedalus.server;
 
 import androidx.annotation.NonNull;
 

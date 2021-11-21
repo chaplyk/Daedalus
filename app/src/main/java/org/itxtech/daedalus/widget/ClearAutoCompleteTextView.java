@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.widget;
+package com.carrotproxy.daedalus.widget;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -10,7 +10,7 @@ import android.view.View;
 import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
-import org.itxtech.daedalus.R;
+import com.carrotproxy.daedalus.R;
 
 /**
  * Daedalus Project

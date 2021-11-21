@@ -1,11 +1,11 @@
-package org.itxtech.daedalus.service;
+package com.carrotproxy.daedalus.service;
 
 import android.os.Build;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.annotation.RequiresApi;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
 
 /**
  * Daedalus Project

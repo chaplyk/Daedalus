@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import org.itxtech.daedalus.BuildConfig;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.util.Logger;
+import com.carrotproxy.daedalus.BuildConfig;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.util.Logger;
 
 import java.util.Locale;
 

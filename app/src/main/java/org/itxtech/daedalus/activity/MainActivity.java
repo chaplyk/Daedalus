@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.activity;
+package com.carrotproxy.daedalus.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -18,12 +18,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
-import org.itxtech.daedalus.BuildConfig;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.fragment.*;
-import org.itxtech.daedalus.service.DaedalusVpnService;
-import org.itxtech.daedalus.util.Logger;
+import com.carrotproxy.daedalus.BuildConfig;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.fragment.*;
+import com.carrotproxy.daedalus.service.DaedalusVpnService;
+import com.carrotproxy.daedalus.util.Logger;
 
 /**
  * Daedalus Project
@@ -39,13 +39,13 @@ import org.itxtech.daedalus.util.Logger;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = "DMainActivity";
 
-    public static final String LAUNCH_ACTION = "org.itxtech.daedalus.activity.MainActivity.LAUNCH_ACTION";
+    public static final String LAUNCH_ACTION = "com.carrotproxy.daedalus.activity.MainActivity.LAUNCH_ACTION";
     public static final int LAUNCH_ACTION_NONE = 0;
     public static final int LAUNCH_ACTION_ACTIVATE = 1;
     public static final int LAUNCH_ACTION_DEACTIVATE = 2;
     public static final int LAUNCH_ACTION_SERVICE_DONE = 3;
 
-    public static final String LAUNCH_FRAGMENT = "org.itxtech.daedalus.activity.MainActivity.LAUNCH_FRAGMENT";
+    public static final String LAUNCH_FRAGMENT = "com.carrotproxy.daedalus.activity.MainActivity.LAUNCH_FRAGMENT";
     public static final int FRAGMENT_NONE = -1;
     public static final int FRAGMENT_HOME = 0;
     public static final int FRAGMENT_DNS_TEST = 1;
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static final int FRAGMENT_ABOUT = 3;
     public static final int FRAGMENT_LOG = 6;
 
-    public static final String LAUNCH_NEED_RECREATE = "org.itxtech.daedalus.activity.MainActivity.LAUNCH_NEED_RECREATE";
+    public static final String LAUNCH_NEED_RECREATE = "com.carrotproxy.daedalus.activity.MainActivity.LAUNCH_NEED_RECREATE";
 
     private static MainActivity instance = null;
 

@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.fragment;
+package com.carrotproxy.daedalus.fragment;
 
 import android.content.Intent;
 import androidx.appcompat.widget.Toolbar;

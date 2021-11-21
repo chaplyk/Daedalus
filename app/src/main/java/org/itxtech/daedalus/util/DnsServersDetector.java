@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.util;
+package com.carrotproxy.daedalus.util;
 
 import android.content.Context;
 import android.net.*;

@@ -1,9 +1,9 @@
-package org.itxtech.daedalus.util;
+package com.carrotproxy.daedalus.util;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.server.CustomDnsServer;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.server.CustomDnsServer;
 
 import java.io.File;
 import java.io.FileReader;

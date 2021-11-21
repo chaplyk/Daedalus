@@ -1,11 +1,11 @@
-package org.itxtech.daedalus.receiver;
+package com.carrotproxy.daedalus.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.activity.MainActivity;
-import org.itxtech.daedalus.util.Logger;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.activity.MainActivity;
+import com.carrotproxy.daedalus.util.Logger;
 
 import java.lang.reflect.Method;
 
@@ -21,8 +21,8 @@ import java.lang.reflect.Method;
  * (at your option) any later version.
  */
 public class StatusBarBroadcastReceiver extends BroadcastReceiver {
-    public static String STATUS_BAR_BTN_DEACTIVATE_CLICK_ACTION = "org.itxtech.daedalus.receiver.StatusBarBroadcastReceiver.STATUS_BAR_BTN_DEACTIVATE_CLICK_ACTION";
-    public static String STATUS_BAR_BTN_SETTINGS_CLICK_ACTION = "org.itxtech.daedalus.receiver.StatusBarBroadcastReceiver.STATUS_BAR_BTN_SETTINGS_CLICK_ACTION";
+    public static String STATUS_BAR_BTN_DEACTIVATE_CLICK_ACTION = "com.carrotproxy.daedalus.receiver.StatusBarBroadcastReceiver.STATUS_BAR_BTN_DEACTIVATE_CLICK_ACTION";
+    public static String STATUS_BAR_BTN_SETTINGS_CLICK_ACTION = "com.carrotproxy.daedalus.receiver.StatusBarBroadcastReceiver.STATUS_BAR_BTN_SETTINGS_CLICK_ACTION";
 
     @Override
     public void onReceive(Context context, Intent intent) {

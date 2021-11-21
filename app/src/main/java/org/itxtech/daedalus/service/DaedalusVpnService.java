@@ -1,4 +1,4 @@
-package org.itxtech.daedalus.service;
+package com.carrotproxy.daedalus.service;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -17,18 +17,18 @@ import android.system.OsConstants;
 import android.util.Log;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NotificationCompat;
-import org.itxtech.daedalus.Daedalus;
-import org.itxtech.daedalus.R;
-import org.itxtech.daedalus.activity.MainActivity;
-import org.itxtech.daedalus.provider.Provider;
-import org.itxtech.daedalus.provider.ProviderPicker;
-import org.itxtech.daedalus.receiver.StatusBarBroadcastReceiver;
-import org.itxtech.daedalus.server.AbstractDnsServer;
-import org.itxtech.daedalus.server.DnsServer;
-import org.itxtech.daedalus.server.DnsServerHelper;
-import org.itxtech.daedalus.util.DnsServersDetector;
-import org.itxtech.daedalus.util.Logger;
-import org.itxtech.daedalus.util.RuleResolver;
+import com.carrotproxy.daedalus.Daedalus;
+import com.carrotproxy.daedalus.R;
+import com.carrotproxy.daedalus.activity.MainActivity;
+import com.carrotproxy.daedalus.provider.Provider;
+import com.carrotproxy.daedalus.provider.ProviderPicker;
+import com.carrotproxy.daedalus.receiver.StatusBarBroadcastReceiver;
+import com.carrotproxy.daedalus.server.AbstractDnsServer;
+import com.carrotproxy.daedalus.server.DnsServer;
+import com.carrotproxy.daedalus.server.DnsServerHelper;
+import com.carrotproxy.daedalus.util.DnsServersDetector;
+import com.carrotproxy.daedalus.util.Logger;
+import com.carrotproxy.daedalus.util.RuleResolver;
 
 import java.net.Inet4Address;
 import java.net.Inet6Address;
@@ -49,8 +49,8 @@ import java.util.HashMap;
  * (at your option) any later version.
  */
 public class DaedalusVpnService extends VpnService implements Runnable {
-    public static final String ACTION_ACTIVATE = "org.itxtech.daedalus.service.DaedalusVpnService.ACTION_ACTIVATE";
-    public static final String ACTION_DEACTIVATE = "org.itxtech.daedalus.service.DaedalusVpnService.ACTION_DEACTIVATE";
+    public static final String ACTION_ACTIVATE = "com.carrotproxy.daedalus.service.DaedalusVpnService.ACTION_ACTIVATE";
+    public static final String ACTION_DEACTIVATE = "com.carrotproxy.daedalus.service.DaedalusVpnService.ACTION_DEACTIVATE";
 
     private static final int NOTIFICATION_ACTIVATED = 0;
 
