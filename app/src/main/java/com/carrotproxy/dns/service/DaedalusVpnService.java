@@ -144,7 +144,7 @@ public class DaedalusVpnService extends VpnService implements Runnable {
                         Intent settingsIntent = new Intent(StatusBarBroadcastReceiver.STATUS_BAR_BTN_SETTINGS_CLICK_ACTION);
                         settingsIntent.setClass(this, StatusBarBroadcastReceiver.class);
                         PendingIntent pIntent = PendingIntent.getActivity(this, 0,
-                                new Intent(this, MainActivity.class), PendingIntent.FLAG_UPDATE_CURRENT);
+                                new Intent(this, MainActivity.class), PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_MUTABLE);
                         builder.setWhen(0)
                                 .setContentTitle(getResources().getString(R.string.notice_activated))
                                 .setDefaults(NotificationCompat.DEFAULT_LIGHTS)
@@ -156,10 +156,10 @@ public class DaedalusVpnService extends VpnService implements Runnable {
                                 .setContentIntent(pIntent)
                                 .addAction(R.drawable.ic_clear, getResources().getString(R.string.button_text_deactivate),
                                         PendingIntent.getBroadcast(this, 0,
-                                                deactivateIntent, PendingIntent.FLAG_UPDATE_CURRENT))
+                                                deactivateIntent, PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_MUTABLE))
                                 .addAction(R.drawable.ic_settings, getResources().getString(R.string.action_settings),
                                         PendingIntent.getBroadcast(this, 0,
-                                                settingsIntent, PendingIntent.FLAG_UPDATE_CURRENT));
+                                                settingsIntent, PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_MUTABLE));
 
                         Notification notification = builder.build();
 
@@ -289,7 +289,7 @@ public class DaedalusVpnService extends VpnService implements Runnable {
                     .setSession("Daedalus")
                     .setConfigureIntent(PendingIntent.getActivity(this, 0,
                             new Intent(this, MainActivity.class).putExtra(MainActivity.LAUNCH_FRAGMENT, MainActivity.FRAGMENT_SETTINGS),
-                            PendingIntent.FLAG_ONE_SHOT));
+                            PendingIntent.FLAG_ONE_SHOT|PendingIntent.FLAG_MUTABLE));
 
             if (Daedalus.getPrefs().getBoolean("settings_app_filter_switch", false)) {
                 ArrayList<String> apps = Daedalus.configurations.getAppObjects();
